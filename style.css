@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    z-index: 1000;
+}
+
+nav .music {
+    font-size: 33px;
+    color: white;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    background: black;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: red;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 100px;
+    /* Adjust for fixed nav */
+}
+
+.external-link {
+    color: rgb(43, 226, 73);
+    text-decoration: none;
+    position: relative;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.external-link:hover {
+    text-decoration: underline;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100vh;
+    padding: 20px;
+}
+
+.table-container {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.email-link {
+    color: rgb(16, 177, 123);
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
